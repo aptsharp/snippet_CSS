@@ -69,7 +69,9 @@ li a {
   color: royalblue,red;
 }
 
-/* Mídias para formatação em mobiles e monitor */
+
+
+/* Mídias queries para formatação em mobiles e monitor */
 
 @media screen and (max-width: 768px) {
   body {
@@ -98,5 +100,36 @@ li a {
       "content-2"
       "content-3"
       "footer";
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(4, 200px);
+    grid-template-areas:
+      "header"
+      "navbar"
+      "main-content"
+      "content-1"
+      "content-2"
+      "content-3"
+      "footer footer"
+  }
+}
+
+/* landscape ou portrait */
+/* identifica modo horizontal e vertical em telas/celular */
+@media screen and (orientation: portrait){
+  header{
+    background-color: red;
+  }
+}
+
+/* para identificar um dispositivo sensível ao toque */
+
+@media screen and (pointer: coarse){
+  header{
+    background-color: yellow;
   }
 }
