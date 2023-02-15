@@ -70,7 +70,6 @@ li a {
 }
 
 
-
 /* Mídias queries para formatação em mobiles e monitor */
 
 @media screen and (max-width: 768px) {
@@ -102,9 +101,10 @@ li a {
       "footer";
   }
 }
-
-@media screen and (min-width: 320px) and (max-width: 320px) {
+/* os operadores and | or | not pode ser usados. */
+@media screen and (min-width: 320px) and (max-width: 475px) {
   body {
+    flex-wrap: wrap;
     grid-template-columns: 1fr;
     grid-template-rows: 100px repeat(4, 200px);
     grid-template-areas:
@@ -121,6 +121,12 @@ li a {
 /* landscape ou portrait */
 /* identifica modo horizontal e vertical em telas/celular */
 @media screen and (orientation: portrait){
+  body {
+    flex-wrap: wrap;
+  }
+  nav{
+    flex-wrap: wrap;
+  }
   header{
     background-color: red;
   }
@@ -129,6 +135,12 @@ li a {
 /* para identificar um dispositivo sensível ao toque */
 
 @media screen and (pointer: coarse){
+  body {
+    flex-wrap: wrap;
+  }
+  nav{
+    flex-wrap: wrap;
+  }
   header{
     background-color: yellow;
   }
