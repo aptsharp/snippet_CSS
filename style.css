@@ -103,7 +103,7 @@ li a {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 320px) {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 100px repeat(4, 200px);
