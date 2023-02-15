@@ -41,7 +41,7 @@ nav {
 }
 
 .content-2 {
-  background-color: papayawhip;
+  background-color: khaki;
   grid-area: content-2;
 }
 
@@ -67,4 +67,36 @@ li {
 
 li a {
   color: royalblue,red;
+}
+
+/* Mídias para formatação em mobiles e monitor */
+
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px repeat(5, 250px);
+    grid-template-areas:
+      "header header"
+      "navbar"
+      "main-content"
+      "content-1 content-1"
+      "content-2 content-2"
+      "content-3 content-3"
+      "footer footer";
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(6, 200px);
+    grid-template-areas:
+      "header"
+      "navbar"
+      "main-content"
+      "content-1"
+      "content-2"
+      "content-3"
+      "footer";
+  }
 }
