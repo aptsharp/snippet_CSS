@@ -12,4 +12,4 @@ Obs: pode ser usado como background para fazer sites mais rapidos nos novos padr
 Enjoy!®️
 ```
 
-<img src="https://octodex.github.com/images/nyantocat.gif" width="100">
+<img src="https://octodex.github.com/images/nyantocat.gif" width="50">
